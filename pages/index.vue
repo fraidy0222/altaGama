@@ -4,5 +4,8 @@
     <AppHero />
     <AppAbout />
     <AppClient />
+    <AppServices />
+    <AppTeam />
+    <AppFooter />
   </div>
 </template>
