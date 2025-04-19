@@ -2,7 +2,7 @@
   <div class="relative py-16 bg-background min-h-screen">
     <!-- Efecto de fondo mejorado -->
     <div
-      class="absolute inset-0 opacity-10 bg-[url('/images/pattern-tech.jpg')] bg-cover bg-center"
+      class="absolute inset-0 opacity-10 bg-[url('/images/pattern.jpg')] bg-cover bg-center"
     ></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
