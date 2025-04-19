@@ -179,11 +179,9 @@
 
       <!-- Botón CTA opcional -->
       <div class="text-center mt-16">
-        <button
-          class="px-8 py-3 bg-primary text-background-accent font-medium rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/20"
-        >
-          Ver todos los servicios
-        </button>
+        <UButton to="/servicios" size="xl" trailing-icon="i-lucide:arrow-right"
+          >Ver todos los servicios
+        </UButton>
       </div>
     </div>
   </div>
