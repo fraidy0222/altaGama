@@ -9,5 +9,18 @@ export default defineNuxtConfig({
       title: "Alta Gama",
     },
   },
-  modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/image", "@nuxt/ui"],
+  modules: [
+    "@nuxt/eslint",
+    "@nuxt/fonts",
+    "@nuxt/image",
+    "@nuxt/ui",
+    "@hypernym/nuxt-gsap",
+  ],
+
+  gsap: {
+    composables: true,
+    extraPlugins: {
+      scrollTrigger: true,
+    },
+  },
 });
