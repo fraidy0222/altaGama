@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Reparación de Servidores",
+    "description": "Diagnóstico y solución profesional de fallas en hardware y software con garantía extendida.",
+    "category": "Infraestructura",
+    "icon": "i-heroicons-server"
+  },
+  {
+    "id": 2,
+    "title": "Virtualización Avanzada",
+    "description": "Implementación de soluciones VMware y Hyper-V para optimizar recursos.",
+    "category": "Infraestructura",
+    "icon": "i-heroicons-cube"
+  },
+  {
+    "id": 3,
+    "title": "Seguridad Informática",
+    "description": "Protección integral contra amenazas digitales con monitoreo 24/7.",
+    "category": "Seguridad",
+    "icon": "i-heroicons-shield-check"
+  },
+  {
+    "id": 4,
+    "title": "Montaje de Paneles Solares",
+    "description": "Instalación profesional de sistemas fotovoltaicos para empresas.",
+    "category": "Energía",
+    "icon": "i-heroicons-sun"
+  },
+  {
+    "id": 5,
+    "title": "Automatización Inteligente",
+    "description": "Sistemas IoT para control y automatización de procesos industriales.",
+    "category": "Automatización",
+    "icon": "i-heroicons-cog"
+  },
+  {
+    "id": 6,
+    "title": "Migración a la Nube",
+    "description": "Transición segura a AWS, Azure o Google Cloud con mínimo downtime.",
+    "category": "Cloud",
+    "icon": "i-heroicons-cloud"
+  },
+  {
+    "id": 7,
+    "title": "Respaldo Automatizado",
+    "description": "Soluciones de backup con encriptación AES-256 y recuperación ante desastres.",
+    "category": "Seguridad",
+    "icon": "i-heroicons-archive-box"
+  },
+  {
+    "id": 8,
+    "title": "Redes Empresariales",
+    "description": "Diseño e implementación de infraestructura de redes escalable.",
+    "category": "Infraestructura",
+    "icon": "i-heroicons-globe-alt"
+  },
+  {
+    "id": 9,
+    "title": "Soporte TI Remoto",
+    "description": "Asistencia técnica especializada 24/7 para tu negocio.",
+    "category": "Soporte",
+    "icon": "i-heroicons-lifebuoy"
+  },
+  {
+    "id": 10,
+    "title": "Ciberseguridad",
+    "description": "Protección avanzada contra ransomware, phishing y APTs.",
+    "category": "Seguridad",
+    "icon": "i-heroicons-lock-closed"
+  },
+  {
+    "id": 11,
+    "title": "Data Center",
+    "description": "Diseño y administración de centros de datos eficientes.",
+    "category": "Infraestructura",
+    "icon": "i-heroicons-building-office"
+  },
+  {
+    "id": 12,
+    "title": "Energía de Respaldo",
+    "description": "Sistemas UPS y generadores para continuidad operativa.",
+    "category": "Energía",
+    "icon": "i-heroicons-bolt"
+  },
+  {
+    "id": 13,
+    "title": "Domótica Empresarial",
+    "description": "Automatización inteligente de espacios corporativos.",
+    "category": "Automatización",
+    "icon": "i-heroicons-home"
+  },
+  {
+    "id": 14,
+    "title": "Firewalls Avanzados",
+    "description": "Protección perimetral con tecnología Next-Gen.",
+    "category": "Seguridad",
+    "icon": "i-heroicons-fire"
+  },
+  {
+    "id": 15,
+    "title": "Monitoreo Proactivo",
+    "description": "Detección temprana de fallas con alertas automatizadas.",
+    "category": "Soporte",
+    "icon": "i-heroicons-eye"
+  },
+  {
+    "id": 16,
+    "title": "Cableado Estructurado",
+    "description": "Infraestructura de red certificada para alto rendimiento.",
+    "category": "Infraestructura",
+    "icon": "i-heroicons-cpu-chip"
+  },
+  {
+    "id": 17,
+    "title": "Auditoría de Seguridad",
+    "description": "Evaluación de vulnerabilidades y planes de remediación.",
+    "category": "Seguridad",
+    "icon": "i-heroicons-document-magnifying-glass"
+  },
+  {
+    "id": 18,
+    "title": "Energía Solar Híbrida",
+    "description": "Sistemas combinados solar-red eléctrica para ahorro garantizado.",
+    "category": "Energía",
+    "icon": "i-heroicons-battery-100"
+  },
+  {
+    "id": 19,
+    "title": "Automatización Industrial",
+    "description": "Control de procesos productivos con PLCs y SCADA.",
+    "category": "Automatización",
+    "icon": "i-heroicons-cog-6-tooth"
+  },
+  {
+    "id": 20,
+    "title": "Recuperación de Desastres",
+    "description": "Plan DRP para continuidad de negocio ante emergencias.",
+    "category": "Cloud",
+    "icon": "i-heroicons-arrow-path-rounded-square"
+  }
+]
