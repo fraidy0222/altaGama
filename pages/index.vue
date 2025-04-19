@@ -3,7 +3,7 @@
     <AppHeader />
     <AppHero />
     <AppAbout />
-    <AppClient />
+    <!-- <AppClient /> -->
     <AppServices />
     <AppTeam />
     <AppFooter />
