@@ -1,5 +1,5 @@
 <template>
-  <section class="relative overflow-hidden bg-background py-18">
+  <section class="relative overflow-hidden bg-background py-12">
     <!-- Efecto de fondo abstracto -->
     <div class="absolute inset-0 opacity-5">
       <div

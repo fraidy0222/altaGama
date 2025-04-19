@@ -76,22 +76,14 @@
 
       <!-- Botones de redes y CTA -->
       <div class="flex items-center gap-2">
-        <div class="hidden md:flex items-center gap-1">
-          <UButton
-            v-for="social in socials"
-            :key="social.icon"
-            :icon="social.icon"
-            variant="ghost"
-            color="neutral"
-            size="sm"
-            class="hover:text-primary hover:bg-primary/10"
-          />
+        <div class="hidden md:flex items-center gap-1 mr-3">
+          <IconsSocial />
         </div>
 
         <UButton
           size="sm"
           class="hidden sm:flex bg-primary text-background hover:bg-primary/90"
-          trailing-icon="i-heroicons-arrow-right-20-solid"
+          trailing-icon="i-heroicons:arrow-right-16-solid"
         >
           Contacto
         </UButton>
@@ -103,7 +95,7 @@
           class="md:hidden"
           @click="isOpen = true"
         >
-          <UIcon name="i-heroicons-bars-3-20-solid" class="w-5 h-5" />
+          <UIcon name="i-heroicons:bars-3-16-solid" class="w-5 h-5" />
         </UButton>
       </div>
     </UContainer>
@@ -149,12 +141,12 @@ const isOpen = ref(false);
 //   },
 // ];
 
-const socials = [
-  { icon: "i-lucide-twitter" },
-  { icon: "i-lucide-youtube" },
-  { icon: "i-lucide-facebook" },
-  { icon: "i-lucide-linkedin" },
-];
+// const socials = [
+//   { icon: "i-pajamas:twitter" },
+//   { icon: "i-circum:youtube" },
+//   { icon: "i-iconoir:facebook" },
+//   { icon: "i-bi:linkedin" },
+// ];
 
 // const mobileLinks = [
 //   {
