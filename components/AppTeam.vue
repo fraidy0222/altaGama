@@ -1,10 +1,10 @@
 <template>
-  <section class="relative bg-background py-16 md:py-24 overflow-hidden">
+  <section class="relative bg-background py-16 md:py-24 mb-6 overflow-hidden">
     <!-- Efecto de fondo -->
     <div class="absolute inset-0 opacity-5">
       <div
         class="absolute inset-0 bg-[radial-gradient(#13f6e5_1px,transparent_1px)] [background-size:16px_16px]"
-      ></div>
+      />
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
