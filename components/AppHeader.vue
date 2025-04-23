@@ -141,13 +141,6 @@ const isOpen = ref(false);
 //   },
 // ];
 
-// const socials = [
-//   { icon: "i-pajamas:twitter" },
-//   { icon: "i-circum:youtube" },
-//   { icon: "i-iconoir:facebook" },
-//   { icon: "i-bi:linkedin" },
-// ];
-
 // const mobileLinks = [
 //   {
 //     label: "Servicios",

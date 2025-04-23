@@ -622,6 +622,13 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/lucide@^1.2.37":
+  version "1.2.37"
+  resolved "https://registry.yarnpkg.com/@iconify-json/lucide/-/lucide-1.2.37.tgz#735a6245318b7f9dedf6a364f172743178b7069f"
+  integrity sha512-fiI8A8prb0WPvc5YDIbW1SVlRKwJpR3YGBe41U0Gen1/B9I41K9miU2yAk1e6NVLEdkj17hG0hdaQrAIbs+2Pw==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify/collections@^1.0.536":
   version "1.0.538"
   resolved "https://registry.yarnpkg.com/@iconify/collections/-/collections-1.0.538.tgz#f73ae00beb55927c8b5982a4de26f94e3f6a2d7e"
@@ -4545,11 +4552,6 @@ lru-cache@^5.1.1:
   integrity sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==
   dependencies:
     yallist "^3.0.2"
-
-lucide-vue-next@^0.488.0:
-  version "0.488.0"
-  resolved "https://registry.yarnpkg.com/lucide-vue-next/-/lucide-vue-next-0.488.0.tgz#b138bd4e9b43afa53a44d40dde79c61caa3fdc7a"
-  integrity sha512-Za02FzR1r+XN2oxOQerH7HvZwLJz27qPfzbauYzphtewy1g59Bm2DraVS5Sb9iHcIe3Pqf8cTVufvpwqAKlsew==
 
 magic-regexp@^0.8.0:
   version "0.8.0"

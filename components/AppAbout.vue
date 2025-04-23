@@ -1,5 +1,5 @@
 <template>
-  <section class="relative overflow-hidden bg-background py-12">
+  <section class="relative overflow-hidden bg-background">
     <!-- Efecto de fondo abstracto -->
     <div class="absolute inset-0 opacity-5">
       <div
@@ -7,7 +7,7 @@
       ></div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
       <!-- Encabezado -->
       <div class="text-center mb-16 md:mb-20">
         <span

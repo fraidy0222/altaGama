@@ -17,16 +17,7 @@
 
           <!-- Redes sociales -->
           <div class="flex gap-4 mt-6">
-            <UButton
-              v-for="social in socials"
-              :key="social.icon"
-              :icon="social.icon"
-              variant="ghost"
-              color="gray"
-              size="sm"
-              class="hover:text-primary hover:bg-primary/10"
-              :to="social.link"
-            />
+            <IconsSocial />
           </div>
         </div>
 
@@ -103,25 +94,18 @@
 </template>
 
 <script setup>
-const socials = [
-  { icon: "i-lucide-facebook", link: "#" },
-  { icon: "i-lucide-twitter", link: "#" },
-  { icon: "i-lucide-linkedin", link: "#" },
-  { icon: "i-lucide-youtube", link: "#" },
-];
-
 const quickLinks = [
   { name: "Inicio", href: "/" },
-  { name: "Servicios", href: "/services" },
-  { name: "Sobre Nosotros", href: "/about" },
-  { name: "Equipo", href: "/team" },
-  { name: "Clientes", href: "/clients" },
-  { name: "Contacto", href: "/contact" },
+  { name: "Servicios", href: "/" },
+  { name: "Sobre Nosotros", href: "/" },
+  { name: "Equipo", href: "/" },
+  { name: "Clientes", href: "/" },
+  { name: "Contacto", href: "/" },
 ];
 
 const legalLinks = [
-  { name: "Política de privacidad", href: "/privacy" },
-  { name: "Términos de servicio", href: "/terms" },
-  { name: "Aviso legal", href: "/legal" },
+  { name: "Política de privacidad", href: "/" },
+  { name: "Términos de servicio", href: "/" },
+  { name: "Aviso legal", href: "/" },
 ];
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative py-16 bg-background min-h-screen">
+  <div class="relative py-16 mt-10 bg-background min-h-screen">
     <!-- Efecto de fondo mejorado -->
     <div
       class="absolute inset-0 opacity-10 bg-[url('/images/pattern.jpg')] bg-cover bg-center"
@@ -30,7 +30,7 @@
           placeholder="Buscar servicios..."
           icon="i-heroicons-magnifying-glass"
           size="lg"
-          class="w-full"
+          class="w-full text-primary"
         />
 
         <!-- Selector de categoría -->

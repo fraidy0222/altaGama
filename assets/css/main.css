@@ -1,11 +1,30 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+@font-face {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: "Regular";
+  src: url("/fonts/PublicSans-VariableFont_wght") format("ttf");
+}
+
+@font-face {
+  font-family: "Public Sans", sans-serif;
+
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: "Italic";
+  src: url("/fonts/PublicSans-Italic-VariableFont_wght") format("ttf");
+}
+
 @theme static {
   --font-sans: "Public Sans", sans-serif;
 
   --breakpoint-3xl: 1920px;
-  --color-shakespeare-50: #ebfdff;
+  /* --color-shakespeare-50: #ebfdff;
   --color-shakespeare-100: #cef9ff;
   --color-shakespeare-200: #a2f0ff;
   --color-shakespeare-300: #63e3fd;
@@ -15,7 +34,7 @@
   --color-shakespeare-700: #0a6f94;
   --color-shakespeare-800: #125a78;
   --color-shakespeare-900: #144b65;
-  --color-shakespeare-950: #063146;
+  --color-shakespeare-950: #063146; */
 
   --color-background: #000a0c;
   --color-background-accent: #081617;
@@ -23,8 +42,15 @@
 }
 
 :root {
+  font-family: var(--font-sans);
   --ui-primary: var(--color-primary);
   --ui-background-accent: var(--color-background-accent);
+
+  /* Main background color */
+  --ui-bg: var(--color-background-accent);
+
+  /* More prominent border */
+  /* --ui-border-accented: var(--color-background-accent); */
 }
 
 body {
