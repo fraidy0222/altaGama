@@ -3,7 +3,7 @@
     <!-- Efecto de partículas o fondo abstracto -->
     <div
       class="absolute inset-0 opacity-10 bg-[url('/images/pattern.jpg')] bg-cover"
-    ></div>
+    />
 
     <div class="container mx-auto px-4 relative z-10">
       <div class="text-center mb-16">
@@ -23,7 +23,7 @@
         >
           <div
             class="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-primary opacity-10 transition-all duration-500 group-hover:scale-150"
-          ></div>
+          />
           <div class="relative z-10">
             <div
               class="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary"
@@ -76,7 +76,7 @@
         >
           <div
             class="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-primary opacity-10 transition-all duration-500 group-hover:scale-150"
-          ></div>
+          />
           <div class="relative z-10">
             <div
               class="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary"
@@ -129,7 +129,7 @@
         >
           <div
             class="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-primary opacity-10 transition-all duration-500 group-hover:scale-150"
-          ></div>
+          />
           <div class="relative z-10">
             <div
               class="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary"
@@ -179,7 +179,10 @@
 
       <!-- Botón CTA opcional -->
       <div class="text-center mt-16">
-        <UButton to="/servicios" size="xl" trailing-icon="i-lucide:arrow-right"
+        <UButton
+          to="/servicios"
+          size="xl"
+          trailing-icon="i-heroicons-arrow-right-20-solid"
           >Ver todos los servicios
         </UButton>
       </div>

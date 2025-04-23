@@ -4,7 +4,7 @@
     <div class="absolute inset-0 opacity-5">
       <div
         class="absolute inset-0 bg-[radial-gradient(#13f6e5_1px,transparent_1px)] [background-size:16px_16px]"
-      ></div>
+      />
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
@@ -36,11 +36,12 @@
             />
             <div
               class="absolute inset-0 bg-gradient-to-t from-background-accent/80 to-transparent"
-            ></div>
+            />
+            /
           </div>
           <div
             class="absolute -bottom-6 -right-6 h-32 w-32 rounded-full bg-primary/10 blur-xl"
-          ></div>
+          />
 
           <!-- Badge de experiencia -->
           <div
@@ -135,7 +136,7 @@
             <UButton
               size="xl"
               class="bg-primary text-background hover:bg-primary/90 transition-all"
-              trailing-icon="i-lucide-arrow-right"
+              trailing-icon="i-heroicons-arrow-right-20-solid"
             >
               Conoce nuestro equipo
             </UButton>
@@ -144,7 +145,7 @@
               size="xl"
               variant="outline"
               class="border-gray-600 hover:border-primary text-white hover:text-primary"
-              trailing-icon="i-lucide-badge-check"
+              trailing-icon="i-heroicons-check-badge"
             >
               Nuestras certificaciones
             </UButton>
