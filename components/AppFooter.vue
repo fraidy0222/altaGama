@@ -77,7 +77,7 @@
             reservados.
           </p>
 
-          <div class="flex gap-6">
+          <!-- <div class="flex gap-6">
             <ULink
               v-for="legal in legalLinks"
               :key="legal.name"
@@ -86,7 +86,7 @@
             >
               {{ legal.name }}
             </ULink>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -103,9 +103,9 @@ const quickLinks = [
   { name: "Contacto", href: "/" },
 ];
 
-const legalLinks = [
-  { name: "Política de privacidad", href: "/" },
-  { name: "Términos de servicio", href: "/" },
-  { name: "Aviso legal", href: "/" },
-];
+// const legalLinks = [
+//   { name: "Política de privacidad", href: "/" },
+//   { name: "Términos de servicio", href: "/" },
+//   { name: "Aviso legal", href: "/" },
+// ];
 </script>
