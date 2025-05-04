@@ -49,16 +49,16 @@
       >
         <!-- Imagen con metadatos -->
         <div class="relative lg:w-1/2 w-full">
-          <div class="relative rounded-xl overflow-hidden shadow-2xl">
-            <img
-              ref="AboutImage"
+          <div
+            ref="AboutImage"
+            class="relative rounded-xl overflow-hidden shadow-2xl"
+          >
+            <NuxtImg
               class="w-full h-auto object-cover"
               src="/images/aboutUs1.jpg"
               alt="Equipo de profesionales de IT trabajando"
               itemprop="image"
               loading="lazy"
-              width="800"
-              height="600"
             />
             <div
               class="absolute inset-0 bg-gradient-to-t from-background-accent/80 to-transparent"
