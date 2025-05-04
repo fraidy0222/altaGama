@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-background-accent border-t border-gray-800">
-    <div class="max-w-7xl mx-auto px-6 py-12 md:py-16 lg:px-8">
+    <div class="max-w-7xl mx-auto px-6 py-10 md:py-12 lg:px-8">
       <!-- Grid principal -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         <!-- Columna logo y descripción -->
@@ -76,17 +76,6 @@
             &copy; {{ new Date().getFullYear() }} Alta Gama. Todos los derechos
             reservados.
           </p>
-
-          <!-- <div class="flex gap-6">
-            <ULink
-              v-for="legal in legalLinks"
-              :key="legal.name"
-              :to="legal.href"
-              class="text-gray-500 hover:text-primary text-sm transition-colors"
-            >
-              {{ legal.name }}
-            </ULink>
-          </div> -->
         </div>
       </div>
     </div>
@@ -102,10 +91,4 @@ const quickLinks = [
   { name: "Clientes", href: "/" },
   { name: "Contacto", href: "/" },
 ];
-
-// const legalLinks = [
-//   { name: "Política de privacidad", href: "/" },
-//   { name: "Términos de servicio", href: "/" },
-//   { name: "Aviso legal", href: "/" },
-// ];
 </script>
