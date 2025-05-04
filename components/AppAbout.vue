@@ -1,8 +1,9 @@
 <template>
-  <section class="relative overflow-hidden bg-background">
+  <section ref="aboutSection" class="relative overflow-hidden bg-background">
     <!-- Efecto de fondo abstracto -->
     <div class="absolute inset-0 opacity-5">
       <div
+        ref="bgPattern"
         class="absolute inset-0 bg-[radial-gradient(#13f6e5_1px,transparent_1px)] [background-size:16px_16px]"
       />
     </div>
@@ -11,14 +12,15 @@
       <!-- Encabezado -->
       <div class="text-center mb-16 md:mb-20">
         <span
+          ref="badge"
           class="inline-block px-3 py-1 text-sm font-semibold tracking-wider text-primary uppercase rounded-full bg-primary/10 mb-4"
         >
           Nuestra Historia
         </span>
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+        <h2 ref="title" class="text-4xl md:text-5xl font-bold text-white mb-4">
           Innovación Tecnológica <span class="text-primary">Desde 2010</span>
         </h2>
-        <p class="mx-auto max-w-2xl text-xl text-gray-300">
+        <p ref="description" class="mx-auto max-w-2xl text-xl text-gray-300">
           Liderando la transformación digital con soluciones personalizadas y un
           equipo de expertos apasionados.
         </p>
@@ -27,7 +29,7 @@
       <!-- Contenido principal -->
       <div class="flex flex-col lg:flex-row items-center gap-12 xl:gap-20">
         <!-- Imagen con efecto -->
-        <div class="relative lg:w-1/2 w-full">
+        <div ref="AboutImage" class="relative lg:w-1/2 w-full">
           <div class="relative rounded-xl overflow-hidden shadow-2xl">
             <img
               class="w-full h-auto object-cover"
@@ -45,6 +47,7 @@
 
           <!-- Badge de experiencia -->
           <div
+            ref="yearsExperience"
             class="absolute -bottom-5 -left-5 bg-background-accent border border-primary/30 rounded-lg px-6 py-3 shadow-lg"
           >
             <div class="text-center">
@@ -57,7 +60,7 @@
         </div>
 
         <!-- Texto contenido -->
-        <div class="lg:w-1/2 w-full mt-10 lg:mt-0">
+        <div ref="textContenido" class="lg:w-1/2 w-full mt-10 lg:mt-0">
           <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">
             Más que una empresa, somos tu
             <span class="text-primary">socio tecnológico</span>
@@ -76,6 +79,7 @@
               productividad y aseguran la continuidad del negocio.
             </p>
 
+            <!-- List of Features -->
             <div class="pt-2">
               <ul class="space-y-3">
                 <li class="flex items-start">
@@ -156,4 +160,110 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+const { $gsap } = useNuxtApp();
+
+const aboutSection = ref(null);
+const bgPattern = ref(null);
+const badge = ref(null);
+const title = ref(null);
+const description = ref(null);
+const AboutImage = ref(null);
+const yearsExperience = ref(null);
+const textContenido = ref(null);
+
+onMounted(() => {
+  // Configuración global de GSAP
+  $gsap.defaults({
+    ease: "power3.out",
+    duration: 1,
+  });
+
+  // Animación del fondo
+  $gsap.from(bgPattern.value, {
+    scale: 0.95,
+    opacity: 0,
+    duration: 2,
+    ease: "sine.out",
+  });
+
+  // Animación del contenido
+  const tl = $gsap.timeline({
+    scrollTrigger: {
+      trigger: aboutSection.value,
+      start: "top 75%",
+      toggleActions: "play none none none",
+      markers: false, // Cambiar a true para desarrollo
+    },
+  });
+
+  tl.from(badge.value, {
+    y: 30,
+    opacity: 0,
+    duration: 0.8,
+  })
+    .from(
+      title.value,
+      {
+        y: 40,
+        opacity: 0,
+        duration: 1,
+      },
+      "-=0.3"
+    )
+    .from(
+      description.value,
+      {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "-=0.4"
+    )
+    .from(
+      AboutImage.value,
+      {
+        scale: 0.92,
+        opacity: 0,
+        duration: 1.2,
+        ease: "back.out(1.2)",
+      },
+      "-=0.5"
+    )
+    .from(
+      textContenido.value,
+      {
+        x: 30,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "-=0.4"
+    )
+    .from(
+      yearsExperience.value,
+      {
+        y: 30,
+        opacity: 0,
+        duration: 0.7,
+        ease: "bounce.out",
+      },
+      "-=0.7"
+    );
+});
+
+onUnmounted(() => {
+  $gsap.set(
+    [
+      aboutSection.value,
+      bgPattern.value,
+      badge.value,
+      title.value,
+      description.value,
+      AboutImage.value,
+      yearsExperience.value,
+      textContenido.value,
+    ],
+    { clearProps: true }
+  );
+});
+</script>
