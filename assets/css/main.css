@@ -22,20 +22,6 @@
 
 @theme static {
   --font-sans: "Public Sans", sans-serif;
-
-  --breakpoint-3xl: 1920px;
-  /* --color-shakespeare-50: #ebfdff;
-  --color-shakespeare-100: #cef9ff;
-  --color-shakespeare-200: #a2f0ff;
-  --color-shakespeare-300: #63e3fd;
-  --color-shakespeare-400: #1cccf4;
-  --color-shakespeare-500: #00b1dc;
-  --color-shakespeare-600: #038bb7;
-  --color-shakespeare-700: #0a6f94;
-  --color-shakespeare-800: #125a78;
-  --color-shakespeare-900: #144b65;
-  --color-shakespeare-950: #063146; */
-
   --color-background: #000a0c;
   --color-background-accent: #081617;
   --color-primary: #13f6e5;
