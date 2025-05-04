@@ -42,6 +42,7 @@
           <!-- Botones CTA -->
           <div class="mt-10 flex flex-wrap gap-6">
             <UButton
+              to="/servicios"
               size="xl"
               class="bg-primary text-background hover:bg-primary/90 transition-all group"
               trailing-icon="i-heroicons-arrow-right"
