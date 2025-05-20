@@ -309,19 +309,19 @@ onMounted(() => {
     );
 });
 
-onUnmounted(() => {
-  $gsap.set(
-    [
-      aboutSection.value,
-      bgPattern.value,
-      badge.value,
-      title.value,
-      description.value,
-      AboutImage.value,
-      yearsExperience.value,
-      textContenido.value,
-    ],
-    { clearProps: true }
-  );
-});
+// onUnmounted(() => {
+//   $gsap.set(
+//     [
+//       aboutSection.value,
+//       bgPattern.value,
+//       badge.value,
+//       title.value,
+//       description.value,
+//       AboutImage.value,
+//       yearsExperience.value,
+//       textContenido.value,
+//     ],
+//     { clearProps: true }
+//   );
+// });
 </script>
