@@ -109,10 +109,10 @@ const servicesCard = ref([
 // Función para inicializar las animaciones
 const initAnimations = () => {
   // Configuración global de GSAP
-  $gsap.defaults({
-    ease: "power3.out",
-    duration: 0.8,
-  });
+  // $gsap.defaults({
+  //   ease: "power3.out",
+  //   duration: 0.8,
+  // });
 
   // Animación del fondo con efecto parallax sutil
   $gsap.from(bgPattern.value, {
@@ -151,16 +151,16 @@ const initAnimations = () => {
   const cards = $gsap.utils.toArray(".service-card");
   cards.forEach((card, index) => {
     $gsap.from(card, {
-      y: 60,
+      y: 50, // Menos desplazamiento vertical
       opacity: 0,
-      duration: 0.95,
-      delay: index * 0.3,
+      duration: 0.8, // Duración más corta
+      delay: index * 0.15, // Retardo más corto entre tarjetas
       scrollTrigger: {
         trigger: card,
-        start: "top 80%",
-        toggleActions: "play none none none",
+        start: "top 85%", // Dispara un poco más abajo
+        toggleActions: "restart none none none",
       },
-      ease: "power3.out",
+      ease: "sine.out", // Easing más suave
     });
 
     // Efecto hover mejorado
