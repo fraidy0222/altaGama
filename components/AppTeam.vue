@@ -28,7 +28,7 @@
         <div
           v-for="(member, index) in team"
           :key="index"
-          class="group relative h-80 rounded-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
+          class="team-card group relative h-80 rounded-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
         >
           <!-- Imagen que ocupa todo el espacio -->
           <NuxtImg
@@ -48,7 +48,7 @@
           <!-- Efecto hover sutil -->
           <div
             class="absolute inset-0 border-2 border-transparent group-hover:border-primary/50 transition-all duration-300 rounded-xl pointer-events-none"
-          ></div>
+          />
         </div>
       </div>
     </div>
@@ -56,7 +56,10 @@
 </template>
 
 <script setup>
-const team = [
+import { ref, onMounted } from "vue";
+const { $gsap } = useNuxtApp();
+
+const team = ref([
   {
     name: "Carlos Martínez",
     position: "CEO & Fundador",
@@ -77,5 +80,28 @@ const team = [
     position: "Soporte Técnico Senior",
     image: "/images/hero.webp",
   },
-];
+]);
+
+const initAnimations = () => {
+  // Animación CORREGIDA para las tarjetas
+  const cards = $gsap.utils.toArray(".team-card");
+  cards.forEach((card, index) => {
+    $gsap.from(card, {
+      y: 60, // Menos desplazamiento vertical
+      opacity: 0,
+      duration: 0.8, // Duración más corta
+      delay: index * 0.25, // Retardo más corto entre tarjetas
+      scrollTrigger: {
+        trigger: card,
+        start: "top 85%", // Dispara un poco más abajo
+        toggleActions: "restart none none none",
+      },
+      ease: "power2.inOut", // Easing más suave
+    });
+  });
+};
+
+onMounted(() => {
+  initAnimations();
+});
 </script>
