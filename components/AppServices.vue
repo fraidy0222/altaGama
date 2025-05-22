@@ -1,5 +1,5 @@
 <template>
-  <div ref="servicesSection" class="relative py-16 bg-background">
+  <div :id="id" ref="servicesSection" class="relative py-16 bg-background">
     <!-- Efecto de fondo (agregada clase para animación) -->
     <div
       ref="bgPattern"
@@ -78,12 +78,21 @@
 import { ref, onMounted } from "vue";
 const { $gsap } = useNuxtApp();
 
+const route = useRoute();
+
 const servicesSection = ref(null);
 const bgPattern = ref(null);
 const title = ref(null);
 const subtitle = ref(null);
 const btnCta = ref(null);
 // const serviceCards = ref([]) // Array para las tarjetas de servicio
+
+defineProps({
+  id: {
+    type: String,
+    default: "",
+  },
+});
 
 const servicesCard = ref([
   {
@@ -106,14 +115,9 @@ const servicesCard = ref([
     icon: "i-heroicons-shield-check",
   },
 ]);
+
 // Función para inicializar las animaciones
 const initAnimations = () => {
-  // Configuración global de GSAP
-  // $gsap.defaults({
-  //   ease: "power3.out",
-  //   duration: 0.8,
-  // });
-
   // Animación del fondo con efecto parallax sutil
   $gsap.from(bgPattern.value, {
     scale: 0.95,
@@ -210,5 +214,21 @@ const initAnimations = () => {
 
 onMounted(() => {
   initAnimations();
+  onMounted(() => {
+    if (route.hash === "#services") {
+      // Esperar un frame para asegurar que el DOM está listo
+      requestAnimationFrame(() => {
+        gsap.to(window, {
+          duration: 1.5,
+          scrollTo: {
+            y: "#services",
+            offsetY: 80,
+            autoKill: false,
+          },
+          ease: "power3.inOut",
+        });
+      });
+    }
+  });
 });
 </script>

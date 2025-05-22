@@ -1,5 +1,6 @@
 <template>
   <section
+    :id="id"
     ref="teamSection"
     class="relative bg-background py-16 md:py-24 mb-6 overflow-hidden"
   >
@@ -69,6 +70,13 @@ const teamSection = ref(null);
 const title = ref(null);
 const subtitle = ref(null);
 const description = ref(null);
+
+defineProps({
+  id: {
+    type: String,
+    default: "",
+  },
+});
 
 const team = ref([
   {

@@ -1,5 +1,6 @@
 <template>
   <section
+    id="about"
     ref="aboutSection"
     class="relative overflow-hidden bg-background"
     itemscope

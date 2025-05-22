@@ -1,5 +1,6 @@
 <template>
   <div
+    :id="id"
     ref="heroSection"
     class="min-h-screen bg-[url(/images/hero-mobile.webp)] md:bg-[url(/images/hero-tablet.webp)] lg:bg-[url(/images/hero.webp)] mask-b-from-70% bg-cover bg-center bg-no-repeat bg-fixed"
   >
@@ -99,6 +100,13 @@ const underlineSvg = ref(null);
 const underlinePath = ref(null);
 const description = ref(null);
 const primaryButton = ref(null);
+
+defineProps({
+  id: {
+    type: String,
+    default: "",
+  },
+});
 
 onMounted(() => {
   initAnimations();

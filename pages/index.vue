@@ -1,9 +1,9 @@
 <template>
   <div>
-    <AppHero />
-    <AppAbout />
+    <AppHero id="home" />
+    <AppAbout id="about" />
     <!-- <AppClient /> -->
-    <AppServices />
-    <AppTeam />
+    <AppServices id="services" />
+    <AppTeam id="team" />
   </div>
 </template>
