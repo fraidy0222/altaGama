@@ -1,5 +1,8 @@
 <template>
-  <section class="relative bg-background py-16 md:py-24 mb-6 overflow-hidden">
+  <section
+    ref="teamSection"
+    class="relative bg-background py-16 md:py-24 mb-6 overflow-hidden"
+  >
     <!-- Efecto de fondo -->
     <div class="absolute inset-0 opacity-5">
       <div
@@ -9,16 +12,19 @@
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
       <!-- Encabezado -->
-      <div class="text-center mb-12 md:mb-16">
+      <div ref="title" class="text-center mb-12 md:mb-16">
         <span
           class="inline-block px-3 py-1 text-sm font-semibold tracking-wider text-primary uppercase rounded-full bg-primary/10 mb-4"
         >
           Nuestro Equipo
         </span>
-        <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+        <h2
+          ref="subtitle"
+          class="text-3xl md:text-5xl font-bold text-white mb-4"
+        >
           Expertos en <span class="text-primary">tecnología</span>
         </h2>
-        <p class="mx-auto max-w-2xl text-lg text-gray-300">
+        <p ref="description" class="mx-auto max-w-2xl text-lg text-gray-300">
           Profesionales certificados con años de experiencia
         </p>
       </div>
@@ -59,30 +65,69 @@
 import { ref, onMounted } from "vue";
 const { $gsap } = useNuxtApp();
 
+const teamSection = ref(null);
+const title = ref(null);
+const subtitle = ref(null);
+const description = ref(null);
+
 const team = ref([
   {
-    name: "Carlos Martínez",
+    name: "Jose Guerro Gascón",
     position: "CEO & Fundador",
     image: "/images/hero.webp",
   },
   {
-    name: "Ana Rodríguez",
-    position: "Directora de Tecnología",
+    name: "Fraidy González",
+    position: "Director Comercial",
     image: "/images/hero.webp",
   },
   {
-    name: "David Fernández",
-    position: "Ingeniero de Sistemas",
+    name: "Ronald William Pérez",
+    position: "Director de Desarrollo",
     image: "/images/hero.webp",
   },
   {
-    name: "Laura Gómez",
-    position: "Soporte Técnico Senior",
+    name: "Yosley Samora",
+    position: "Director de Servicios Técnicos",
     image: "/images/hero.webp",
   },
 ]);
 
 const initAnimations = () => {
+  // Timeline principal para el encabezado
+  const headerTL = $gsap.timeline({
+    scrollTrigger: {
+      trigger: teamSection.value,
+      start: "top 80%",
+      toggleActions: "play none none none",
+    },
+  });
+
+  headerTL
+    .from(title.value, {
+      y: 50,
+      opacity: 0,
+      duration: 1,
+    })
+    .from(
+      subtitle.value,
+      {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "-=0.4"
+    )
+    .from(
+      description.value,
+      {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "-=0.5"
+    );
+
   // Animación CORREGIDA para las tarjetas
   const cards = $gsap.utils.toArray(".team-card");
   cards.forEach((card, index) => {
