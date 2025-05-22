@@ -26,20 +26,19 @@
 
       <!-- Botones de redes y CTA -->
       <div class="flex items-center gap-2">
-        <div class="hidden md:flex items-center gap-1 mr-3">
+        <div class="flex items-center gap-1">
           <IconsSocial />
         </div>
 
-        <UButton
+        <!-- <UButton
           size="sm"
           class="hidden sm:flex bg-primary text-background hover:bg-primary/90"
           trailing-icon="i-heroicons:arrow-right-16-solid"
         >
           Contacto
-        </UButton>
+        </UButton> -->
 
         <!-- Menú móvil -->
-
         <UDrawer
           v-model:open="open"
           direction="right"
