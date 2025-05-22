@@ -61,7 +61,7 @@
             </div>
             <div class="flex items-center gap-3">
               <UIcon name="i-heroicons-envelope" class="w-5 h-5 text-primary" />
-              <span>contacto@altagama.com</span>
+              <span>altagama@gmail.com</span>
             </div>
           </address>
         </div>
@@ -85,10 +85,8 @@
 <script setup>
 const quickLinks = [
   { name: "Inicio", href: "/" },
-  { name: "Servicios", href: "/" },
   { name: "Sobre Nosotros", href: "/" },
+  { name: "Servicios", href: "/" },
   { name: "Equipo", href: "/" },
-  { name: "Clientes", href: "/" },
-  { name: "Contacto", href: "/" },
 ];
 </script>
