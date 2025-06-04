@@ -9,6 +9,19 @@ export default defineNuxtConfig({
   colorMode: {
     preference: "dark",
   },
+
+  vite: {
+    base: "/",
+    build: {
+      sourcemap: false,
+    },
+  },
+
+  // Configuración de @nuxt/image (si lo usas)
+  image: {
+    dir: "public",
+  },
+
   app: {
     head: {
       title: "Alta Gama S.R.L",
