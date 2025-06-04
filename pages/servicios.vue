@@ -9,21 +9,25 @@
       <!-- Encabezado mejor estructurado -->
       <div class="text-center mb-16">
         <span
+          ref="title"
           class="inline-block px-4 py-1 text-sm font-semibold text-primary uppercase bg-primary/10 rounded-full mb-4"
         >
           Soluciones Integrales
         </span>
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+        <h1
+          ref="subtitle"
+          class="text-4xl md:text-5xl font-bold text-white mb-4"
+        >
           Nuestros <span class="text-primary">Servicios</span> Tecnológicos
         </h1>
-        <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+        <p ref="description" class="text-lg text-gray-300 max-w-3xl mx-auto">
           Descubre cómo podemos optimizar tu infraestructura IT con soluciones a
           medida
         </p>
       </div>
 
       <!-- Sistema de filtrado mejorado -->
-      <div class="mb-12 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div ref="inputField" class="card grid grid-cols-1 md:grid-cols-2 gap-4">
         <!-- Barra de búsqueda -->
         <UInput
           v-model="searchQuery"
@@ -53,6 +57,7 @@
           v-for="service in paginatedServices"
           :key="service.id"
           :service="service"
+          class="service-card"
         />
       </div>
 
@@ -69,7 +74,10 @@
       </div>
 
       <!-- Paginación mejorada -->
-      <div class="mt-12 flex justify-center">
+      <div
+        v-if="filteredServices.length > pageSize"
+        class="mt-12 flex justify-center"
+      >
         <UPagination
           v-model="page"
           :page-count="pageSize"
@@ -83,6 +91,7 @@
               },
             },
           }"
+          @update:page="changePage"
         />
       </div>
     </div>
@@ -90,32 +99,106 @@
 </template>
 
 <script setup>
+import { ref, computed, watch, nextTick } from "vue";
 import ServiceCard from "~/components/ServicesComponent/ServiceCard.vue";
 import servicesData from "~/assets/data/services.json";
+
+const { $gsap } = useNuxtApp();
+
+const serviciosSection = ref(null);
+const title = ref(null);
+const subtitle = ref(null);
+const description = ref(null);
+const inputField = ref(null);
 
 // Estado para filtros
 const services = ref(servicesData);
 const searchQuery = ref("");
 const selectedCategory = ref("Todas");
 const page = ref(1);
-const pageSize = 6;
+const pageSize = ref(6); // Cambiado a ref para mayor flexibilidad
+
+const initAnimations = () => {
+  const tl = $gsap.timeline({
+    scrollTrigger: {
+      trigger: serviciosSection.value,
+      start: "top 80%",
+      toggleActions: "play none none none",
+    },
+  });
+
+  tl.from(title.value, {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+  })
+    .from(
+      subtitle.value,
+      {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "-=0.4"
+    )
+    .from(
+      description.value,
+      {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "-=0.5"
+    )
+    .from(
+      inputField.value,
+      {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "-=0.6"
+    );
+
+  const cards = $gsap.utils.toArray(".service-card");
+
+  cards.forEach((card, index) => {
+    $gsap.from(card, {
+      y: 60,
+      opacity: 0,
+      duration: 0.8,
+      delay: index * 0.25,
+      scrollTrigger: {
+        trigger: card,
+        start: "top 85%",
+        toggleActions: "play none none none",
+        once: true,
+      },
+      ease: "power2.inOut",
+    });
+  });
+};
+
+onMounted(() => {
+  initAnimations();
+});
 
 // Categorías disponibles
-const categories = computed(() => [
-  "Todas",
-  ...new Set(services.value.map((s) => s.category)),
-]);
+const categories = computed(() => {
+  const uniqueCategories = [...new Set(services.value.map((s) => s.category))];
+  return ["Todas", ...uniqueCategories];
+});
 
-// Servicios filtrados (CORRECCIÓN IMPORTANTE)
+// Servicios filtrados
 const filteredServices = computed(() => {
   let result = services.value;
 
-  // Filtrar por categoría (corregido)
+  // Filtrar por categoría
   if (selectedCategory.value && selectedCategory.value !== "Todas") {
     result = result.filter((s) => s.category === selectedCategory.value);
   }
 
-  // Filtrar por búsqueda (corregido)
+  // Filtrar por búsqueda
   if (searchQuery.value) {
     const query = searchQuery.value.toLowerCase();
     result = result.filter(
@@ -128,15 +211,36 @@ const filteredServices = computed(() => {
   return result;
 });
 
-// Servicios paginados (CORRECCIÓN IMPORTANTE)
+// Servicios paginados
 const paginatedServices = computed(() => {
-  const start = (page.value - 1) * pageSize;
-  const end = start + pageSize;
+  const start = (page.value - 1) * pageSize.value;
+  const end = start + pageSize.value;
   return filteredServices.value.slice(start, end);
 });
 
-// Resetear página al filtrar (CORRECCIÓN IMPORTANTE)
+// Cambiar página
+// Cambia la función changePage así:
+const changePage = (newPage) => {
+  page.value = newPage;
+
+  // Verifica que el elemento existe antes de usarlo
+  nextTick(() => {
+    if (serviciosSection.value) {
+      window.scrollTo({
+        top: serviciosSection.value.offsetTop - 100,
+        behavior: "smooth",
+      });
+    }
+  });
+};
+// Resetear página al filtrar
 watch([searchQuery, selectedCategory], () => {
   page.value = 1;
 });
 </script>
+
+<style scoped>
+.card {
+  margin-bottom: 48px;
+}
+</style>
