@@ -1,142 +1,548 @@
 [
   {
     "id": 1,
-    "title": "Reparación de Servidores",
-    "description": "Diagnóstico y solución profesional de fallas en hardware y software con garantía extendida.",
-    "category": "Infraestructura",
-    "icon": "i-heroicons-server"
+    "title": "Mantenimiento de PC",
+    "description": "Mantenimiento básico de computadoras personales para optimizar su rendimiento.",
+    "category": "Mantenimiento",
+    "icon": "i-heroicons-computer-desktop"
   },
   {
     "id": 2,
-    "title": "Virtualización Avanzada",
-    "description": "Implementación de soluciones VMware y Hyper-V para optimizar recursos.",
-    "category": "Infraestructura",
-    "icon": "i-heroicons-cube"
+    "title": "Mantenimiento Profundo PC",
+    "description": "Limpieza interna exhaustiva y optimización avanzada de equipos de computación.",
+    "category": "Mantenimiento",
+    "icon": "i-heroicons-wrench-screwdriver"
   },
   {
     "id": 3,
-    "title": "Seguridad Informática",
-    "description": "Protección integral contra amenazas digitales con monitoreo 24/7.",
-    "category": "Seguridad",
-    "icon": "i-heroicons-shield-check"
+    "title": "Mantenimiento Laptop",
+    "description": "Servicio especializado para portátiles, incluyendo limpieza y revisión de componentes.",
+    "category": "Mantenimiento",
+    "icon": "i-heroicons-device-phone-mobile"
   },
   {
     "id": 4,
-    "title": "Montaje de Paneles Solares",
-    "description": "Instalación profesional de sistemas fotovoltaicos para empresas.",
-    "category": "Energía",
-    "icon": "i-heroicons-sun"
+    "title": "Mantenimiento Equipo Adicional",
+    "description": "Mantenimiento de periféricos y equipos complementarios a los sistemas informáticos.",
+    "category": "Mantenimiento",
+    "icon": "i-heroicons-cog-6-tooth"
   },
   {
     "id": 5,
-    "title": "Automatización Inteligente",
-    "description": "Sistemas IoT para control y automatización de procesos industriales.",
-    "category": "Automatización",
-    "icon": "i-heroicons-cog"
+    "title": "Mantenimiento Impresora Láser",
+    "description": "Limpieza y calibración de impresoras láser para óptimo funcionamiento.",
+    "category": "Impresión",
+    "icon": "i-heroicons-printer"
   },
   {
     "id": 6,
-    "title": "Migración a la Nube",
-    "description": "Transición segura a AWS, Azure o Google Cloud con mínimo downtime.",
-    "category": "Cloud",
-    "icon": "i-heroicons-cloud"
+    "title": "Mantenimiento Impresora Tinta",
+    "description": "Mantenimiento especializado para impresoras de inyección de tinta.",
+    "category": "Impresión",
+    "icon": "i-heroicons-printer"
   },
   {
     "id": 7,
-    "title": "Respaldo Automatizado",
-    "description": "Soluciones de backup con encriptación AES-256 y recuperación ante desastres.",
-    "category": "Seguridad",
-    "icon": "i-heroicons-archive-box"
+    "title": "Mantenimiento Impresora Matricial",
+    "description": "Servicio técnico para impresoras matriciales y de impacto.",
+    "category": "Impresión",
+    "icon": "i-heroicons-printer"
   },
   {
     "id": 8,
-    "title": "Redes Empresariales",
-    "description": "Diseño e implementación de infraestructura de redes escalable.",
-    "category": "Infraestructura",
-    "icon": "i-heroicons-globe-alt"
+    "title": "Mantenimiento Impresora Laser (3x1)",
+    "description": "Mantenimiento integral para equipos multifuncionales láser.",
+    "category": "Impresión",
+    "icon": "i-heroicons-printer"
   },
   {
     "id": 9,
-    "title": "Soporte TI Remoto",
-    "description": "Asistencia técnica especializada 24/7 para tu negocio.",
-    "category": "Soporte",
-    "icon": "i-heroicons-lifebuoy"
+    "title": "Mantenimiento y Reparación",
+    "description": "Servicio combinado de mantenimiento preventivo y correctivo para equipos.",
+    "category": "Mantenimiento",
+    "icon": "i-heroicons-wrench"
   },
   {
     "id": 10,
-    "title": "Ciberseguridad",
-    "description": "Protección avanzada contra ransomware, phishing y APTs.",
-    "category": "Seguridad",
-    "icon": "i-heroicons-lock-closed"
+    "title": "Revisión y Diagnóstico de Equipos",
+    "description": "Evaluación técnica completa para identificar fallos en equipos informáticos.",
+    "category": "Diagnóstico",
+    "icon": "i-heroicons-magnifying-glass"
   },
   {
     "id": 11,
-    "title": "Data Center",
-    "description": "Diseño y administración de centros de datos eficientes.",
-    "category": "Infraestructura",
-    "icon": "i-heroicons-building-office"
+    "title": "Mantenimiento y Revisión Masari",
+    "description": "Servicio especializado para equipos Masari (especificar si es una marca particular).",
+    "category": "Mantenimiento",
+    "icon": "i-heroicons-cog"
   },
   {
     "id": 12,
-    "title": "Energía de Respaldo",
-    "description": "Sistemas UPS y generadores para continuidad operativa.",
-    "category": "Energía",
+    "title": "Reparación de Medios Técnicos",
+    "description": "Reparación de dispositivos y medios técnicos diversos.",
+    "category": "Reparación",
     "icon": "i-heroicons-bolt"
   },
   {
     "id": 13,
-    "title": "Domótica Empresarial",
-    "description": "Automatización inteligente de espacios corporativos.",
-    "category": "Automatización",
-    "icon": "i-heroicons-home"
+    "title": "Confección de Documentación",
+    "description": "Elaboración de manuales técnicos y documentación de sistemas.",
+    "category": "Administrativo",
+    "icon": "i-heroicons-document-text"
   },
   {
     "id": 14,
-    "title": "Firewalls Avanzados",
-    "description": "Protección perimetral con tecnología Next-Gen.",
-    "category": "Seguridad",
-    "icon": "i-heroicons-fire"
+    "title": "Otros Servicios Ofimáticos",
+    "description": "Servicios diversos relacionados con equipos y entornos de oficina.",
+    "category": "Ofimática",
+    "icon": "i-heroicons-briefcase"
   },
   {
     "id": 15,
-    "title": "Monitoreo Proactivo",
-    "description": "Detección temprana de fallas con alertas automatizadas.",
-    "category": "Soporte",
-    "icon": "i-heroicons-eye"
+    "title": "Revisión y Diagnostico de Redes",
+    "description": "Evaluación completa de infraestructuras de red para detectar problemas.",
+    "category": "Redes",
+    "icon": "i-heroicons-globe-alt"
   },
   {
     "id": 16,
-    "title": "Cableado Estructurado",
-    "description": "Infraestructura de red certificada para alto rendimiento.",
-    "category": "Infraestructura",
-    "icon": "i-heroicons-cpu-chip"
+    "title": "Diseño de Proyecto",
+    "description": "Planificación y diseño de proyectos tecnológicos a medida.",
+    "category": "Proyectos",
+    "icon": "i-heroicons-clipboard-document-list"
   },
   {
     "id": 17,
-    "title": "Auditoría de Seguridad",
-    "description": "Evaluación de vulnerabilidades y planes de remediación.",
-    "category": "Seguridad",
-    "icon": "i-heroicons-document-magnifying-glass"
+    "title": "Montaje Punto Red",
+    "description": "Instalación profesional de puntos de conexión de red.",
+    "category": "Redes",
+    "icon": "i-heroicons-arrow-path-rounded-square"
   },
   {
     "id": 18,
-    "title": "Energía Solar Híbrida",
-    "description": "Sistemas combinados solar-red eléctrica para ahorro garantizado.",
-    "category": "Energía",
-    "icon": "i-heroicons-battery-100"
+    "title": "Montaje Punto Telefonía",
+    "description": "Instalación de puntos para sistemas telefónicos empresariales.",
+    "category": "Telecomunicaciones",
+    "icon": "i-heroicons-phone"
   },
   {
     "id": 19,
-    "title": "Automatización Industrial",
-    "description": "Control de procesos productivos con PLCs y SCADA.",
-    "category": "Automatización",
-    "icon": "i-heroicons-cog-6-tooth"
+    "title": "Montaje de Punto de Video",
+    "description": "Instalación de sistemas de videovigilancia y puntos de video.",
+    "category": "Seguridad",
+    "icon": "i-heroicons-video-camera"
   },
   {
     "id": 20,
-    "title": "Recuperación de Desastres",
-    "description": "Plan DRP para continuidad de negocio ante emergencias.",
-    "category": "Cloud",
-    "icon": "i-heroicons-arrow-path-rounded-square"
+    "title": "Montaje de Gabinete de Pared",
+    "description": "Instalación profesional de gabinetes de red montados en pared.",
+    "category": "Redes",
+    "icon": "i-heroicons-archive-box"
+  },
+  {
+    "id": 21,
+    "title": "Montaje de Gabinete de Pie",
+    "description": "Instalación de gabinetes de red independientes de pie.",
+    "category": "Redes",
+    "icon": "i-heroicons-archive-box"
+  },
+  {
+    "id": 22,
+    "title": "Montaje de Patch Panel",
+    "description": "Instalación y organización de patch panels para gestión de cables.",
+    "category": "Redes",
+    "icon": "i-heroicons-squares-2x2"
+  },
+  {
+    "id": 23,
+    "title": "Canaleteado",
+    "description": "Instalación de canaletas para organización y protección de cables.",
+    "category": "Cableado",
+    "icon": "i-heroicons-arrows-right-left"
+  },
+  {
+    "id": 24,
+    "title": "Canaleteado Complejo",
+    "description": "Instalación de canaletas en configuraciones especiales o difíciles.",
+    "category": "Cableado",
+    "icon": "i-heroicons-arrows-right-left"
+  },
+  {
+    "id": 25,
+    "title": "Manguereado",
+    "description": "Instalación de tuberías para protección de cableado eléctrico y de datos.",
+    "category": "Cableado",
+    "icon": "i-heroicons-bars-3-bottom-left"
+  },
+  {
+    "id": 26,
+    "title": "Manguereado Complejo",
+    "description": "Instalación de tuberías en configuraciones especiales o de alta complejidad.",
+    "category": "Cableado",
+    "icon": "i-heroicons-bars-3-bottom-left"
+  },
+  {
+    "id": 27,
+    "title": "Cableado",
+    "description": "Tendido de cables de red y telecomunicaciones en entornos estándar.",
+    "category": "Cableado",
+    "icon": "i-heroicons-cpu-chip"
+  },
+  {
+    "id": 28,
+    "title": "Cableado Complejo",
+    "description": "Tendido de cables en configuraciones especiales o de alta complejidad.",
+    "category": "Cableado",
+    "icon": "i-heroicons-cpu-chip"
+  },
+  {
+    "id": 29,
+    "title": "Cableado (Soterrado)",
+    "description": "Instalación de cableado subterráneo para redes y telecomunicaciones.",
+    "category": "Cableado",
+    "icon": "i-heroicons-arrow-down-circle"
+  },
+  {
+    "id": 30,
+    "title": "Soterrado (Tierra)",
+    "description": "Instalación de infraestructura subterránea en terrenos naturales.",
+    "category": "Cableado",
+    "icon": "i-heroicons-arrow-down-circle"
+  },
+  {
+    "id": 31,
+    "title": "Soterrado (Otras Superficies)",
+    "description": "Instalación de infraestructura subterránea en superficies especiales.",
+    "category": "Cableado",
+    "icon": "i-heroicons-arrow-down-circle"
+  },
+  {
+    "id": 32,
+    "title": "Cableado Eléctrico",
+    "description": "Instalación y mantenimiento de cableado eléctrico para equipos tecnológicos.",
+    "category": "Electricidad",
+    "icon": "i-heroicons-bolt"
+  },
+  {
+    "id": 33,
+    "title": "Mantenimiento a Respaldo",
+    "description": "Servicios de mantenimiento para sistemas de respaldo y UPS.",
+    "category": "Mantenimiento",
+    "icon": "i-heroicons-battery-50"
+  },
+  {
+    "id": 34,
+    "title": "Diseño Complejidad Baja",
+    "description": "Servicios de diseño para proyectos con requerimientos básicos.",
+    "category": "Diseño",
+    "icon": "i-heroicons-pencil-square"
+  },
+  {
+    "id": 35,
+    "title": "Diseño Complejidad Media",
+    "description": "Servicios de diseño para proyectos con requerimientos intermedios.",
+    "category": "Diseño",
+    "icon": "i-heroicons-pencil-square"
+  },
+  {
+    "id": 36,
+    "title": "Diseño Complejidad Alta",
+    "description": "Servicios de diseño para proyectos con requerimientos avanzados.",
+    "category": "Diseño",
+    "icon": "i-heroicons-pencil-square"
+  },
+  {
+    "id": 37,
+    "title": "Vectorizado de Complejidad Baja",
+    "description": "Conversión de imágenes a vectores para diseños simples.",
+    "category": "Diseño",
+    "icon": "i-heroicons-square-3-stack-3d"
+  },
+  {
+    "id": 38,
+    "title": "Vectorizado de Complejidad Alta",
+    "description": "Conversión de imágenes a vectores para diseños complejos.",
+    "category": "Diseño",
+    "icon": "i-heroicons-square-3-stack-3d"
+  },
+  {
+    "id": 39,
+    "title": "Edición de Imágenes",
+    "description": "Retoque y manipulación profesional de imágenes digitales.",
+    "category": "Diseño",
+    "icon": "i-heroicons-photo"
+  },
+  {
+    "id": 40,
+    "title": "Montaje Circuito Eléctrico",
+    "description": "Instalación y configuración de circuitos eléctricos para equipos tecnológicos.",
+    "category": "Electricidad",
+    "icon": "i-heroicons-bolt-slash"
+  },
+  {
+    "id": 41,
+    "title": "Acrílico: Corte",
+    "description": "Corte profesional de piezas y componentes en acrílico.",
+    "category": "Materiales",
+    "icon": "i-heroicons-scissors"
+  },
+  {
+    "id": 42,
+    "title": "Acrílico: Trabajo con Láser",
+    "description": "Trabajos de precisión con láser en materiales acrílicos.",
+    "category": "Materiales",
+    "icon": "i-heroicons-sparkles"
+  },
+  {
+    "id": 43,
+    "title": "Acrílico: Montaje",
+    "description": "Ensamblaje e instalación de estructuras y piezas acrílicas.",
+    "category": "Materiales",
+    "icon": "i-heroicons-puzzle-piece"
+  },
+  {
+    "id": 44,
+    "title": "Vinilo: Montaje",
+    "description": "Instalación profesional de vinilos decorativos y funcionales.",
+    "category": "Materiales",
+    "icon": "i-heroicons-puzzle-piece"
+  },
+  {
+    "id": 45,
+    "title": "PVC: Montaje",
+    "description": "Instalación y ensamblaje de estructuras y componentes en PVC.",
+    "category": "Materiales",
+    "icon": "i-heroicons-puzzle-piece"
+  },
+  {
+    "id": 46,
+    "title": "MDF: Limpieza",
+    "description": "Servicios de limpieza y mantenimiento para piezas de MDF.",
+    "category": "Materiales",
+    "icon": "i-lucide-brush-cleaning"
+  },
+  {
+    "id": 47,
+    "title": "MDF: Corte",
+    "description": "Corte profesional de tableros y piezas de MDF.",
+    "category": "Materiales",
+    "icon": "i-heroicons-scissors"
+  },
+  {
+    "id": 48,
+    "title": "MDF: Trabajo con Láser",
+    "description": "Trabajos de precisión con láser en materiales de MDF.",
+    "category": "Materiales",
+    "icon": "i-heroicons-sparkles"
+  },
+  {
+    "id": 49,
+    "title": "MDF: Montaje",
+    "description": "Ensamblaje e instalación de estructuras y piezas de MDF.",
+    "category": "Materiales",
+    "icon": "i-heroicons-puzzle-piece"
+  },
+  {
+    "id": 50,
+    "title": "Otros: Limpieza",
+    "description": "Servicios de limpieza para diversos materiales y componentes.",
+    "category": "Materiales",
+    "icon": "i-lucide-brush-cleaning"
+  },
+  {
+    "id": 51,
+    "title": "Otros: Corte",
+    "description": "Corte profesional de diversos materiales.",
+    "category": "Materiales",
+    "icon": "i-heroicons-scissors"
+  },
+  {
+    "id": 52,
+    "title": "Otros: Trabajo con Láser",
+    "description": "Trabajos de precisión con láser en diversos materiales.",
+    "category": "Materiales",
+    "icon": "i-heroicons-sparkles"
+  },
+  {
+    "id": 53,
+    "title": "Otros: Montaje",
+    "description": "Ensamblaje e instalación de diversos materiales y componentes.",
+    "category": "Materiales",
+    "icon": "i-heroicons-puzzle-piece"
+  },
+  {
+    "id": 54,
+    "title": "Montaje de Cartelería",
+    "description": "Instalación profesional de señalética y elementos gráficos.",
+    "category": "Instalación",
+    "icon": "i-heroicons-map-pin"
+  },
+  {
+    "id": 55,
+    "title": "Asesoría Técnica",
+    "description": "Consultoría especializada en soluciones tecnológicas.",
+    "category": "Consultoría",
+    "icon": "i-heroicons-chat-bubble-left-ellipsis"
+  },
+  {
+    "id": 56,
+    "title": "Montaje de Registro",
+    "description": "Instalación de registros eléctricos y de comunicaciones.",
+    "category": "Electricidad",
+    "icon": "i-heroicons-inbox"
+  },
+  {
+    "id": 57,
+    "title": "Montaje de Caja 4x4",
+    "description": "Instalación de cajas eléctricas estándar 4x4 pulgadas.",
+    "category": "Electricidad",
+    "icon": "i-heroicons-cube"
+  },
+  {
+    "id": 58,
+    "title": "Ranurado",
+    "description": "Creación de ranuras para instalación de cableado en paredes y superficies.",
+    "category": "Instalación",
+    "icon": "i-heroicons-arrow-trending-down"
+  },
+  {
+    "id": 59,
+    "title": "Montaje de Servicio de Virtualización",
+    "description": "Implementación de soluciones de virtualización para servidores y estaciones.",
+    "category": "Infraestructura",
+    "icon": "i-heroicons-cloud"
+  },
+  {
+    "id": 60,
+    "title": "Montaje de Servicio de Enrutamiento",
+    "description": "Configuración de routers y soluciones de enrutamiento avanzado.",
+    "category": "Redes",
+    "icon": "i-heroicons-arrows-right-left"
+  },
+  {
+    "id": 61,
+    "title": "Montaje de Servicio de Cortafuego",
+    "description": "Implementación de firewalls y sistemas de seguridad perimetral.",
+    "category": "Seguridad",
+    "icon": "i-heroicons-shield-exclamation"
+  },
+  {
+    "id": 62,
+    "title": "Montaje de Servicio de Directorio Activo",
+    "description": "Configuración e implementación de servicios de directorio activo.",
+    "category": "Infraestructura",
+    "icon": "i-heroicons-folder"
+  },
+  {
+    "id": 63,
+    "title": "Montaje de Servicio de Proxy",
+    "description": "Implementación de servidores proxy para gestión de tráfico web.",
+    "category": "Redes",
+    "icon": "i-heroicons-arrow-path"
+  },
+  {
+    "id": 64,
+    "title": "Montaje de Servicio de Mensajería",
+    "description": "Configuración de sistemas de correo electrónico empresarial.",
+    "category": "Comunicaciones",
+    "icon": "i-heroicons-envelope"
+  },
+  {
+    "id": 65,
+    "title": "Montaje de Servicio de Antivirus",
+    "description": "Implementación de soluciones antivirus corporativas.",
+    "category": "Seguridad",
+    "icon": "i-heroicons-shield-check"
+  },
+  {
+    "id": 66,
+    "title": "Montaje de Servicio de Mensajería Instantánea",
+    "description": "Configuración de sistemas de chat y comunicación instantánea empresarial.",
+    "category": "Comunicaciones",
+    "icon": "i-heroicons-chat-bubble-oval-left-ellipsis"
+  },
+  {
+    "id": 67,
+    "title": "Montaje de Servicio de DHCP",
+    "description": "Implementación de servicios de asignación dinámica de direcciones IP.",
+    "category": "Redes",
+    "icon": "i-heroicons-cursor-arrow-ripple"
+  },
+  {
+    "id": 68,
+    "title": "Montaje de Servicio de Análisis de Trazas",
+    "description": "Configuración de sistemas para monitoreo y análisis de tráfico de red.",
+    "category": "Redes",
+    "icon": "i-heroicons-chart-bar"
+  },
+  {
+    "id": 69,
+    "title": "Montaje de Servicio de Base de Datos",
+    "description": "Implementación y configuración de servidores de bases de datos.",
+    "category": "Infraestructura",
+    "icon": "i-heroicons-circle-stack"
+  },
+  {
+    "id": 70,
+    "title": "Montaje de Servicio de NFS",
+    "description": "Configuración de sistemas de archivos en red (Network File System).",
+    "category": "Redes",
+    "icon": "i-heroicons-folder-open"
+  },
+  {
+    "id": 71,
+    "title": "Montaje de Servicio de DNS",
+    "description": "Implementación de servidores de nombres de dominio.",
+    "category": "Redes",
+    "icon": "i-heroicons-globe-alt"
+  },
+  {
+    "id": 72,
+    "title": "Montaje de Servicio de Nube",
+    "description": "Configuración e implementación de servicios en la nube.",
+    "category": "Infraestructura",
+    "icon": "i-heroicons-cloud"
+  },
+  {
+    "id": 73,
+    "title": "Revisión, Diagnostico y Puesta en Marcha de Aplicaciones",
+    "description": "Evaluación y configuración de aplicaciones empresariales.",
+    "category": "Software",
+    "icon": "i-heroicons-computer-desktop"
+  },
+  {
+    "id": 74,
+    "title": "Instalación Sistemas Operativos",
+    "description": "Instalación y configuración de sistemas operativos en equipos.",
+    "category": "Software",
+    "icon": "i-heroicons-command-line"
+  },
+  {
+    "id": 75,
+    "title": "Instalación de Paquetes Ofimáticos",
+    "description": "Implementación de suites ofimáticas en estaciones de trabajo.",
+    "category": "Software",
+    "icon": "i-heroicons-document"
+  },
+  {
+    "id": 76,
+    "title": "Otros Aplicaciones",
+    "description": "Instalación y configuración de diversas aplicaciones empresariales.",
+    "category": "Software",
+    "icon": "i-heroicons-window"
+  },
+  {
+    "id": 77,
+    "title": "Identificación y Diagnostico de redes débiles",
+    "description": "Evaluación técnica de redes con problemas de señal o rendimiento.",
+    "category": "Redes",
+    "icon": "i-heroicons-signal-slash"
+  },
+  {
+    "id": 78,
+    "title": "Reparación de redes débiles",
+    "description": "Soluciones técnicas para mejorar el rendimiento de redes con problemas.",
+    "category": "Redes",
+    "icon": "i-heroicons-signal"
   }
 ]

@@ -1,0 +1,314 @@
+[
+  {
+    "id": 1,
+    "title": "Mantenimiento de PC"
+  },
+  {
+    "id": 2,
+    "title": "Mantenimiento Profundo PC"
+  },
+  {
+    "id": 3,
+    "title": "Mantenimiento Laptop"
+  },
+  {
+    "id": 4,
+    "title": "Mantenimiento Equipo Adicional"
+  },
+  {
+    "id": 5,
+    "title": "Mantenimiento Impresora Láser"
+  },
+  {
+    "id": 6,
+    "title": "Mantenimiento Impresora Tinta"
+  },
+  {
+    "id": 7,
+    "title": "Mantenimiento Impresora Matricial"
+  },
+  {
+    "id": 8,
+    "title": "Mantenimiento Impresora Laser (3x1)"
+  },
+  {
+    "id": 9,
+    "title": "Mantenimiento y Reparación"
+  },
+  {
+    "id": 10,
+    "title": "Revisión y Diagnóstico de Equipos"
+  },
+  {
+    "id": 11,
+    "title": "Mantenimiento y Revisión Masari"
+  },
+  {
+    "id": 12,
+    "title": "Reparación de Medios Técnicos"
+  },
+  {
+    "id": 13,
+    "title": "Confección de Documentación"
+  },
+  {
+    "id": 14,
+    "title": "Otros Servicios Ofimáticos"
+  },
+  {
+    "id": 15,
+    "title": "Revisión y Diagnostico de Redes"
+  },
+  {
+    "id": 16,
+    "title": "Diseño de Proyecto"
+  },
+  {
+    "id": 17,
+    "title": "Montaje Punto Red"
+  },
+  {
+    "id": 18,
+    "title": "Montaje Punto Telefonía"
+  },
+  {
+    "id": 19,
+    "title": "Montaje de Punto de Video"
+  },
+  {
+    "id": 20,
+    "title": "Montaje de Gabinete de Pared"
+  },
+  {
+    "id": 21,
+    "title": "Montaje de Gabinete de Pie"
+  },
+  {
+    "id": 22,
+    "title": "Montaje de Patch Panel"
+  },
+  {
+    "id": 23,
+    "title": "Canaleteado "
+  },
+  {
+    "id": 24,
+    "title": "Canaleteado Complejo"
+  },
+  {
+    "id": 25,
+    "title": "Manguereado"
+  },
+  {
+    "id": 26,
+    "title": "Manguereado Complejo"
+  },
+  {
+    "id": 27,
+    "title": "Cableado"
+  },
+  {
+    "id": 28,
+    "title": "Cableado Complejo"
+  },
+  {
+    "id": 29,
+    "title": "Cableado (Soterrado)"
+  },
+  {
+    "id": 30,
+    "title": "Soterrado (Tierra)"
+  },
+  {
+    "id": 31,
+    "title": "Soterrado (Otras Superficies)"
+  },
+  {
+    "id": 32,
+    "title": "Cableado Eléctrico"
+  },
+  {
+    "id": 33,
+    "title": "Mantenimiento a Respaldo"
+  },
+  {
+    "id": 34,
+    "title": "Diseño Complejidad Baja"
+  },
+  {
+    "id": 35,
+    "title": "Diseño Complejidad Media"
+  },
+  {
+    "id": 36,
+    "title": "Diseño Complejidad Alta"
+  },
+  {
+    "id": 37,
+    "title": "Vectorizado de Complejidad Baja"
+  },
+  {
+    "id": 38,
+    "title": "Vectorizado de Complejidad Alta"
+  },
+  {
+    "id": 39,
+    "title": "Edición de Imágenes"
+  },
+  {
+    "id": 40,
+    "title": "Montaje Circuito Eléctrico "
+  },
+  {
+    "id": 41,
+    "title": "Acrílico: Corte"
+  },
+  {
+    "id": 42,
+    "title": "Acrílico: Trabajo con Láser"
+  },
+  {
+    "id": 43,
+    "title": "Acrílico: Montaje"
+  },
+  {
+    "id": 44,
+    "title": "Vinilo: Montaje"
+  },
+  {
+    "id": 45,
+    "title": "PVC: Montaje"
+  },
+  {
+    "id": 46,
+    "title": "MDF: Limpieza"
+  },
+  {
+    "id": 47,
+    "title": "MDF: Corte"
+  },
+  {
+    "id": 48,
+    "title": "MDF: Trabajo con Láser"
+  },
+  {
+    "id": 48,
+    "title": "MDF: Montaje"
+  },
+  {
+    "id": 49,
+    "title": "Otros: Limpieza"
+  },
+  {
+    "id": 50,
+    "title": "Otros: Corte"
+  },
+  {
+    "id": 51,
+    "title": "Otros: Trabajo con Láser"
+  },
+  {
+    "id": 52,
+    "title": "Otros: Montaje"
+  },
+  {
+    "id": 53,
+    "title": "Montaje de Cartelería"
+  },
+  {
+    "id": 54,
+    "title": "Asesoría Técnica"
+  },
+  {
+    "id": 55,
+    "title": "Montaje de Registro"
+  },
+  {
+    "id": 56,
+    "title": "Montaje de Caja 4x4"
+  },
+  {
+    "id": 57,
+    "title": "Ranurado"
+  },
+  {
+    "id": 58,
+    "title": "Montaje de Servicio de Virtualización"
+  },
+  {
+    "id": 59,
+    "title": "Montaje de Servicio de Enrutamiento"
+  },
+  {
+    "id": 60,
+    "title": "Montaje de Servicio de Cortafuego"
+  },
+  {
+    "id": 61,
+    "title": "Montaje de Servicio de Directorio Activo"
+  },
+  {
+    "id": 62,
+    "title": "Montaje de Servicio de Proxy"
+  },
+  {
+    "id": 63,
+    "title": "Montaje de Servicio de Mensajería"
+  },
+  {
+    "id": 64,
+    "title": "Montaje de Servicio de Antivirus"
+  },
+  {
+    "id": 65,
+    "title": "Montaje de Servicio de Mensajería Instantánea"
+  },
+  {
+    "id": 66,
+    "title": "Montaje de Servicio de DHCP"
+  },
+  {
+    "id": 67,
+    "title": "Montaje de Servicio de Análisis de Trazas"
+  },
+  {
+    "id": 68,
+    "title": "Montaje de Servicio de Base de Datos"
+  },
+  {
+    "id": 69,
+    "title": "Montaje de Servicio de NFS"
+  },
+  {
+    "id": 70,
+    "title": "Montaje de Servicio de DNS"
+  },
+  {
+    "id": 70,
+    "title": "Montaje de Servicio de Nube"
+  },
+  {
+    "id": 70,
+    "title": "Revisión, Diagnostico y Puesta en Marcha de Aplicaciones."
+  },
+  {
+    "id": 70,
+    "title": "Instalación Sistemas Operativos"
+  },
+  {
+    "id": 70,
+    "title": "Instalación de Paquetes Ofimáticos"
+  },
+  {
+    "id": 70,
+    "title": "Otros Aplicaciones"
+  },
+  {
+    "id": 70,
+    "title": "Identificación y Diagnostico de redes débiles"
+  },
+  {
+    "id": 70,
+    "title": "Reparación de redes débiles  "
+  }
+]
