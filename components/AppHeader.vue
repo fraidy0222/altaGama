@@ -10,9 +10,14 @@
           class="flex items-center gap-3 group"
           @click.prevent="scrollToSection('home')"
         >
-          <NuxtImg
+          <!-- <NuxtImg
             src="/images/logo.png"
             class="w-10 h-10 transition-all duration-300 group-hover:scale-110"
+            alt="Alta Gama"
+          /> -->
+          <img
+            src="/images/logo.png"
+            class="w-12 h-12 transition-all duration-300 group-hover:scale-110"
             alt="Alta Gama"
           />
           <span

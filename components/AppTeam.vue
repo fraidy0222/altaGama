@@ -38,12 +38,16 @@
           class="team-card group relative h-80 rounded-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
         >
           <!-- Imagen que ocupa todo el espacio -->
-          <NuxtImg
+          <!-- <NuxtImg
+            :src="member.image"
+            class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+            :alt="`Foto de ${member.name}`"
+          /> -->
+          <img
             :src="member.image"
             class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
             :alt="`Foto de ${member.name}`"
           />
-
           <!-- Máscara degradada con información -->
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6"

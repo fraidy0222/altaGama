@@ -78,8 +78,8 @@
       </div>
 
       <div class="absolute hidden lg:flex top-0 -right-96 -rotate-45">
-        <!-- <img src="/images/circuito.png" alt="" /> -->
-        <NuxtImg src="/images/circuito.png" />
+        <img src="/images/circuito.png" alt="" />
+        <!-- <NuxtImg src="/images/circuito.png" /> -->
       </div>
     </div>
   </div>

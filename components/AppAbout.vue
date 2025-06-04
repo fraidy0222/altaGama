@@ -54,12 +54,18 @@
             ref="AboutImage"
             class="relative rounded-xl overflow-hidden shadow-2xl"
           >
-            <NuxtImg
+            <!-- <NuxtImg
               class="w-full h-auto object-cover"
               src="/images/aboutUs1.jpg"
               alt="Equipo de profesionales de IT trabajando"
               itemprop="image"
               loading="lazy"
+            /> -->
+            <img
+              class="w-full h-auto object-cover"
+              src="/images/aboutUs1.jpg"
+              alt="Equipo de profesionales de IT trabajando"
+              itemprop="image"
             />
             <div
               class="absolute inset-0 bg-gradient-to-t from-background-accent/80 to-transparent"

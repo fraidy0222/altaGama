@@ -6,7 +6,8 @@
         <!-- Columna logo y descripción -->
         <div class="lg:col-span-2">
           <div class="flex items-center gap-3 mb-6">
-            <NuxtImg src="/images/logo.png" class="w-12 h-12" alt="Logo" />
+            <!-- <NuxtImg src="/images/logo.png" class="w-12 h-12" alt="Logo" /> -->
+            <img src="/images/logo.png" class="w-12 h-12" alt="Logo" />
             <span class="text-2xl font-bold text-white">Alta Gama</span>
           </div>
           <p class="text-gray-400 text-sm leading-relaxed max-w-md">
