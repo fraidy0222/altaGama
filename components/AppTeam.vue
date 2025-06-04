@@ -147,7 +147,8 @@ const initAnimations = () => {
       scrollTrigger: {
         trigger: card,
         start: "top 85%", // Dispara un poco más abajo
-        toggleActions: "restart none none none",
+        toggleActions: "play none none none",
+        once: true,
       },
       ease: "power2.inOut", // Easing más suave
     });

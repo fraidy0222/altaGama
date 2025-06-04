@@ -30,12 +30,18 @@
           </h3>
           <ul class="space-y-3">
             <li v-for="link in quickLinks" :key="link.name">
-              <ULink
-                :to="link.href"
+              <!-- <ULink
                 class="text-gray-400 hover:text-primary text-sm transition-colors"
+                @click="handleNavigation(item)"
               >
-                {{ link.name }}
-              </ULink>
+                {{ link.label }}
+              </ULink> -->
+              <button
+                class="text-sm text-gray-400 font-medium hover:text-primary transition-colors"
+                @click="handleNavigation(link)"
+              >
+                {{ link.label }}
+              </button>
             </li>
           </ul>
         </div>
@@ -83,10 +89,58 @@
 </template>
 
 <script setup>
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { useRouter } from "vue-router";
+// import { VisuallyHidden } from "@headlessui/vue";
+
+const router = useRouter();
+const route = useRoute();
+
+// Registrar plugin solo en cliente
+gsap.registerPlugin(ScrollToPlugin);
+
 const quickLinks = [
-  { name: "Inicio", href: "/" },
-  { name: "Sobre Nosotros", href: "/" },
-  { name: "Servicios", href: "/" },
-  { name: "Equipo", href: "/" },
+  { label: "Inicio", path: "/", section: "home" },
+  { label: "Sobre Nosotros", path: "/", section: "about" },
+  { label: "Servicios", path: "/servicios", section: "services" },
+  { label: "Equipo", path: "/", section: "team" },
 ];
+
+const scrollToSection = async (sectionId) => {
+  // Si estamos en la página principal
+  if (route.path === "/") {
+    gsap.to(window, {
+      duration: 1.5,
+      scrollTo: {
+        y: `#${sectionId}`,
+        offsetY: 80,
+        autoKill: false,
+      },
+      ease: "power3.inOut",
+    });
+  } else {
+    // Si estamos en otra página, navegar a home primero
+    await router.push("/");
+    await nextTick(); // Esperar a que se actualice el DOM
+
+    gsap.to(window, {
+      duration: 1.5,
+      scrollTo: {
+        y: `#${sectionId}`,
+        offsetY: 80,
+        autoKill: false,
+      },
+      ease: "power3.inOut",
+    });
+  }
+};
+
+const handleNavigation = (item) => {
+  if (item.section) {
+    scrollToSection(item.section);
+  } else {
+    router.push(item.path);
+  }
+};
 </script>

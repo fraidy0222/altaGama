@@ -56,7 +56,7 @@
           v-model:open="open"
           :prevent-close="true"
           direction="right"
-          :ui="{ header: 'flex items-center justify-between' }"
+          :ui="{ header: 'flex items-center justify-between w-[200px]' }"
         >
           <!-- Botón para abrir el drawer (debe estar fuera del drawer) -->
           <UButton variant="ghost" color="neutral" class="md:hidden">
@@ -82,10 +82,10 @@
           </template>
 
           <template #body>
-            <ul class="flex flex-col space-y-5">
-              <li v-for="item in items" :key="item.value">
+            <ul class="flex flex-col w-full space-y-5">
+              <li v-for="item in items" :key="item.value" class="w-full">
                 <button
-                  class="text-sm font-medium hover:text-primary transition-colors"
+                  class="text-sm w-full text-start font-medium hover:text-primary hover:bg-primary/50 transition-colors"
                   @click="handleNavigation(item)"
                 >
                   {{ item.label }}

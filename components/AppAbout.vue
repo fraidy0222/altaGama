@@ -192,26 +192,27 @@
 
           <!-- Botones con semántica -->
           <div class="mt-10 flex flex-col sm:flex-row gap-4">
-            <UButton
+            <!-- <UButton
+
               size="xl"
-              class="bg-primary text-background hover:bg-primary/90 transition-all"
+              class="bg-primary text-background hover:bg-primary/90 transition-all flex items-center justify-center"
               trailing-icon="i-heroicons-arrow-right-20-solid"
               aria-label="Conoce a nuestro equipo de expertos"
               itemprop="url"
             >
               Conoce nuestro equipo
-            </UButton>
+            </UButton> -->
 
-            <UButton
+            <!-- <UButton
               size="xl"
               variant="outline"
-              class="border-gray-600 hover:border-primary text-white hover:text-primary"
+              class="border-gray-600 hover:border-primary text-white hover:text-primary flex items-center justify-center"
               trailing-icon="i-heroicons-check-badge"
               aria-label="Ver nuestras certificaciones profesionales"
               itemprop="url"
             >
               Nuestras certificaciones
-            </UButton>
+            </UButton> -->
           </div>
         </div>
       </div>

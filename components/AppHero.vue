@@ -2,7 +2,7 @@
   <div
     :id="id"
     ref="heroSection"
-    class="min-h-screen bg-[url(/images/hero-mobile.webp)] md:bg-[url(/images/hero-tablet.webp)] lg:bg-[url(/images/hero.webp)] mask-b-from-70% bg-cover bg-center bg-no-repeat bg-fixed"
+    class="min-h-screen bg-[url(/images/hero-mobile.webp)] md:bg-[url(images/hero-tablet.webp)] lg:bg-[url(images/hero.webp)] mask-b-from-70% bg-cover bg-center bg-no-repeat bg-fixed"
   >
     <div class="relative bg-black/70 min-h-screen overflow-hidden">
       <div
@@ -78,6 +78,7 @@
       </div>
 
       <div class="absolute hidden lg:flex top-0 -right-96 -rotate-45">
+        <!-- <img src="/images/circuito.png" alt="" /> -->
         <NuxtImg src="/images/circuito.png" />
       </div>
     </div>
